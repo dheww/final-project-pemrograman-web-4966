@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu ul li {
+            cursor: pointer;
+            background-color: transparent;
+            color: rgb(165, 165, 165);
+
+            &&:hover {
+                color: white;
+                background-color: rgb(131, 131, 131);
+            }
+        }
+
+        #menu ul li span {
+            margin-left: 15px;
+            /* &&:hover{
+                margin-left: 102px;
+            } */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-3 py-3 p-0 d-flex flex-column justify-content-around"
+                style="background-color: rgb(39, 38, 38);">
+                
+                
+                <div>
+                    <h1 class="text-white fs-2 text-center">Halaman Dosen Pengampu</h1>
+                    <div class="input-group w-75 d-flex align-items-center px-2 rounded text-white m-auto my-4 border"
+                        style="border-color: rgb(148, 148, 148);">
+                        <input class="form-control bg-transparent border-0 text-white" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+
+                    <div class="text-white w-100" id="menu">
+                        <ul class="list-group">
+                            <li class="list-group-item py-3 rounded-0 ps-5">
+                                <i class="fa-solid fa-house"></i>
+                                <span style="font-weight: 500;">Dashboard</span>
+                            </li>
+                            <li class="list-group-item py-3 rounded-0 ps-5">
+                                <i class="fa-regular fa-address-card"></i>
+                                <span style="font-weight: 500;">Tambah Data</span>
+                            </li>
+                            <li class="list-group-item py-3 rounded-0 ps-5">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span style="font-weight: 500;">Rekap Nilai</span>
+                            </li>
+                            <li class="list-group-item py-3 rounded-0 ps-5">
+                                <i class="fa-solid fa-table-columns"></i>
+                                <span style="font-weight: 500;">Absensi</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                    <button class="btn btn-lg w-50 bg-warning mx-auto">
+                        LOG OUT
+                    </button>
+
+            </div>
+            <div class="col p-0" style="background-color: rgb(211, 211, 211);">
+                <div class="bg-white w-100 py-1 gap-2 py-1 d-flex align-items-center px-4">
+                    <img src="logo_amikom_full_color.png" width="40" height="40" />
+                    <h3>Universitas Amikom Yogyakarta</h3>
+                    <div class="ms-auto">
+                        <div class="d-flex gap-2">
+                            <button class="btn">
+
+                                <i class="fa-solid fa-envelope"></i>
+                            </button>
+
+                            <button class="btn">
+                                <i class="fa-solid fa-bell"></i>
+                            </button>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="d-flex justify-content-end flex-column">
+                                    <h6 class="m-0">Dhewi Sakti A.</h6>
+                                    <span class="text-end">23.01.4966</span>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle"
+                                        style="background-color: darkgrey; height: 35px; width: 35px;">
+                                        <i class="fa-solid fa-user"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+
+
+                <div class="">
+                    <div class=" border-bottom border-dark border-2">
+                        <h4 class="my-1 fs-2 ms-1">PUSAT DATA MAHASISWA</h4>
+
+                    </div>
+                    <!--  -->
+
+                    <div class="d-flex py-3 bg-white px-2">
+                        <div class=" d-flex  w-50">
+                            <div class="input-group gap-2 w-75">
+                                <label>Periodik Akademi</label>
+                                <div class=" flex-grow-1">
+                                    <select class="form-select form-select-sm border-dark border-1">
+                                        <option>2025</option>
+                                        <option>2024</option>
+                                        <option>2023</option>
+                                        <option selected>2022</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex gap-2" style="margin-left: auto;">
+                            <button type="button" class="btn btn-sm d-flex align-items-center gap-2 btn-primary">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <span class="">
+                                    Kembali ke Daftar
+                                </span>
+                            </button>
+                            <button type="button" class="btn btn-sm d-flex align-items-center gap-2 btn-success">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <span class="">
+                                    Tambah Data
+                                </span>
+                            </button>
+
+                            <button type="button" class="btn btn-sm d-flex align-items-center gap-2 btn-warning">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <span class="">
+                                    Edit
+                                </span>
+                            </button>
+
+                            <button type="button" class="btn btn-sm d-flex align-items-center gap-2 btn-danger">
+                                <i class="fa-solid fa-trash"></i>
+                                <span class="">
+                                    Hapus
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="px-3 ">
+                        <div style="background-color: rgb(191, 191, 191);" class="row pt-2 ">
+                            <div class="col-3">
+                                <img src="./profile.png" width="200" height="200" />
+                            </div>
+
+                            <div class="row col-9 px-0">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-5  py-1">
+                                            Nama Mahasiswa
+                                        </div>
+                                        <div class="col-7  py-1">
+                                            <div class="input-group bg-white border border-dark rounded-2">
+                                                <input type="text" class="form-control position-relative form-control-sm"  aria-describedby="basic-addon2">
+                                                <!-- <i class="fa-solid fa-magnifying-glass position-absolute end-0 me-2 mt-2"></i> -->
+                                              </div>
+                                        </div>
+                                        <div class="col-5  py-1">
+                                            Tempat Lahir
+                                        </div>
+                                        <div class="col-7   py-1">
+                                            <div class="input-group bg-white border border-dark rounded-2">
+                                                <input type="text" class="form-control position-relative form-control-sm"  aria-describedby="basic-addon2">
+                                                <i class="fa-solid fa-magnifying-glass position-absolute end-0 me-2 mt-2" style="opacity: calc(0.5);"></i>                                            
+                                              </div>
+                                        </div>
+                                        <div class="col-5  py-1">
+                                            Tanggal Lahir
+                                        </div>
+                                        <div class="col-7  py-1">
+                                            <div class="input-group bg-white border border-dark rounded-2">
+                                                <input type="text" class="form-control position-relative form-control-sm"  aria-describedby="basic-addon2">
+                                                <i class="fa-solid fa-chevron-down position-absolute end-0 me-2 mt-2" style="opacity: calc(0.5);"></i>
+                                                
+                                              </div>
+                                        </div>
+                                        <div class="col-5  py-1">
+                                            Alamat
+                                        </div>
+                                        <div class="col-7  py-1">
+                                            <div class="input-group bg-white border border-dark rounded-2">
+                                                <input type="text" class="form-control position-relative form-control-sm"  aria-describedby="basic-addon2">
+                                                <i class="fa-solid fa-magnifying-glass position-absolute end-0 me-2 mt-2" style="opacity: calc(0.5);"></i>
+                                              </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-5  py-1">
+                                            NIM Mahasiswa
+                                        </div>
+                                        <div class="col-7  py-1">
+                                            
+                                            <div class="input-group bg-white border border-dark rounded-2">
+                                                <input type="text" class="form-control position-relative form-control-sm"  aria-describedby="basic-addon2">
+                                                <!-- <i class="fa-solid fa-magnifying-glass position-absolute end-0 me-2 mt-2" style="opacity: calc(0.5);"></i>                                             -->
+                                              </div>
+                                        </div>
+                                        <div class="col-5  py-1">
+                                            Program Studi
+                                        </div>
+                                        <div class="col-7  py-1">
+                                            
+                                            <div class="input-group bg-white border border-dark rounded-2">
+                                                <input type="text" class="form-control position-relative form-control-sm"  aria-describedby="basic-addon2">
+                                                <i class="fa-solid fa-magnifying-glass position-absolute end-0 me-2 mt-2" style="opacity: calc(0.5);"></i>                                            
+                                              </div>
+                                        </div>
+                                        <div class="col-5  py-1">
+                                            Mata Kuliah
+                                        </div>
+                                        <div class="col-7  py-1">
+                                            
+                                            <div class="input-group bg-white border border-dark rounded-2">
+                                                <input type="text" class="form-control position-relative form-control-sm"  aria-describedby="basic-addon2">
+                                                <i class="fa-solid fa-magnifying-glass position-absolute end-0 me-2 mt-2" style="opacity: calc(0.5);"></i>                                            
+                                              </div>
+                                        </div>
+                                        <div class="col-5  py-1">
+                                            Sistem Kuliah
+                                        </div>
+                                        <div class="col-7  py-1">
+                                            
+                                            <div class="input-group bg-white border border-dark rounded-2">
+                                                <input type="text" class="form-control position-relative form-control-sm"  aria-describedby="basic-addon2">
+                                                <i class="fa-solid fa-magnifying-glass position-absolute end-0 me-2 mt-2" style="opacity: calc(0.5);"></i>                                            
+                                              </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- table -->
+                    <div class="d-flex justify-content-end px-3 mt-5">
+                        <button class="btn btn-lg btn-success px-2 py-1" style="background-color: rgb(38, 169, 38);">
+                            <i class="fa-solid fa-plus"></i><span class="ms-2">Simpan Data</span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
